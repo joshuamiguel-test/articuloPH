@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Articulo PH</title>
+  <meta name="description"
+    content="Articulo creates handcrafted capiz shell lights, made by Filipino artisans. Sculptural, warm-glow pendant and table lamps shipped worldwide. Shop on Lazada and Shopee." />
+  <meta name="author" content="Articulo" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#d6b265" />
+
+  <link rel="icon" type="image/png" href="./images/brand_logo.png" />
+  <link rel="apple-touch-icon" href="./images/brand_logo.png" />
+
+  <!-- Canonical (update with your real domain after deploying) -->
+  <link rel="canonical" href="https://articulo.example.com/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Articulo" />
+  <meta property="og:title" content="Articulo — Handcrafted Capiz Lights" />
+  <meta property="og:description"
+    content="Handcrafted capiz shell lights by Filipino artisans. Sculptural, warm, made slowly." />
+  <meta property="og:url" content="https://articulo.example.com/" />
+  <meta property="og:image" content="https://articulo.example.com/images/brand_logo.png" />
+  <meta property="og:image:alt" content="Articulo capiz light glowing warmly" />
+  <meta property="og:locale" content="en_PH" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Articulo — Handcrafted Capiz Lights" />
+  <meta name="twitter:description" content="Handcrafted capiz shell lights by Filipino artisans." />
+  <meta name="twitter:image" content="https://articulo.example.com/images/brand_logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Structured data: Local business / Store -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Articulo",
+    "description": "Handcrafted capiz shell lights made by Filipino artisans.",
+    "url": "https://articulo.example.com/",
+    "image": "https://articulo.example.com/images/brand_logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "PH"
+    },
+    "sameAs": [
+      "https://www.facebook.com/",
+      "https://www.instagram.com/",
+      "https://www.lazada.com.ph/",
+      "https://shopee.ph/"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#" class="brand">ARTICULO</a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false"
+        aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav">
+        <a href="#about">About</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Handcrafted in the Philippines</p>
+          <h1>Light, woven from the sea.</h1>
+          <p class="lead">
+            Articulo creates handcrafted capiz lights — translucent shells shaped
+            by Filipino artisans into warm, sculptural pieces that bring quiet
+            glow to any room.
+          </p>
+          <div class="hero-cta">
+            <a href="#shop" class="btn btn-primary">Shop the collection</a>
+            <a href="#about" class="btn btn-ghost">Our story</a>
+          </div>
+        </div>
+        <div class="hero-logo">
+          <!-- <div class="logo-ring" aria-hidden="true">
+            <span class="logo-text">ARTÍCULO</span>
+          </div> -->
+          <img src="./images/brand_logo.png" alt="Brand logo of Articulo">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>Capiz, reimagined.</h2>
+        </div>
+        <div class="about-text">
+          <p>
+            For generations, capiz shells have been polished and pieced together
+            by hand along the coasts of the Visayas. Each Articulo light carries
+            that craft forward — softly diffused, gently iridescent, and made
+            slowly, the way it has always been made.
+          </p>
+          <p>
+            We work directly with small workshops to design pieces that feel
+            modern but never disposable.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <p class="eyebrow center">Testimonials</p>
+        <h2 class="center">Loved by homes around the world</h2>
+
+        <div class="carousel" aria-roledescription="carousel" aria-label="Customer testimonials">
+          <button class="carousel-btn prev" id="testimonial-prev" aria-label="Previous testimonial">&#8249;</button>
+
+          <div class="carousel-viewport">
+            <ul class="carousel-track" id="testimonial-track">
+              <li class="carousel-slide placeholder">Loading testimonials…</li>
+            </ul>
+          </div>
+
+          <button class="carousel-btn next" id="testimonial-next" aria-label="Next testimonial">&#8250;</button>
+
+          <div class="carousel-dots" id="testimonial-dots" role="tablist"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="shop" class="cta">
+      <div class="container cta-inner">
+        <h2>Find us on your favorite shop.</h2>
+        <p>Browse the full collection on Lazada and Shopee, or follow along on social.</p>
+        <div class="social-row">
+          <a href="https://www.facebook.com/ArticuloPH" target="_blank" rel="noopener" class="social facebook"
+            aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path
+                d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.7c0-.9.3-1.6 1.6-1.6h1.7V4.2c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.4V14h2.7v8h3.4z" />
+            </svg>
+            <span>Facebook</span>
+          </a>
+          <a href="https://www.instagram.com/_articulo_" target="_blank" rel="noopener" class="social instagram"
+            aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+            </svg>
+            <span>Instagram</span>
+          </a>
+          <a href="https://www.lazada.com.ph/shop/articulo" target="_blank" rel="noopener" class="social lazada"
+            aria-label="Lazada">
+            <svg viewBox="0 0 48 48" width="20" height="20" fill="none" stroke="currentColor" stroke-width="3"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="m34.382 6.28l-6.426 3.71c-2.182 1.26-5.732 1.254-7.928-.014L13.56 6.242L4.5 11.473l19.56 11.294L43.5 11.544z" />
+              <path
+                d="M43.5 11.544v19.27L24.966 41.517a1.81 1.81 0 0 1-1.81 0L4.5 30.745V11.473m19.561 11.294v18.987" />
+            </svg>
+            <span>Lazada</span>
+          </a>
+          <a href="https://shopee.ph/articulo_" target="_blank" rel="noopener" class="social shopee"
+            aria-label="Shopee">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path
+                d="M15.9414 17.9633c.229-1.879-.981-3.077-4.1758-4.0969-1.548-.528-2.277-1.22-2.26-2.1719.065-1.056 1.048-1.825 2.352-1.85a5.2898 5.2898 0 0 1 2.8838.89c.116.072.197.06.263-.039.09-.145.315-.494.39-.62.051-.081.061-.187-.068-.281-.185-.1369-.704-.4149-.983-.5319a6.4697 6.4697 0 0 0-2.5118-.514c-1.909.008-3.4129 1.215-3.5389 2.826-.082 1.1629.494 2.1078 1.73 2.8278.262.152 1.6799.716 2.2438.892 1.774.552 2.695 1.5419 2.478 2.6969-.197 1.047-1.299 1.7239-2.818 1.7439-1.2039-.046-2.2878-.537-3.1278-1.19l-.141-.11c-.104-.08-.218-.075-.287.03-.05.077-.376.547-.458.67-.077.108-.035.168.045.234.35.293.817.613 1.134.775a6.7097 6.7097 0 0 0 2.8289.727 4.9048 4.9048 0 0 0 2.0759-.354c1.095-.465 1.8029-1.394 1.9449-2.554zM11.9986 1.4009c-2.068 0-3.7539 1.95-3.8329 4.3899h7.6657c-.08-2.44-1.765-4.3899-3.8328-4.3899zm7.8516 22.5981-.08.001-15.7843-.002c-1.074-.04-1.863-.91-1.971-1.991l-.01-.195L1.298 6.2858a.459.459 0 0 1 .45-.494h4.9748C6.8448 2.568 9.1607 0 11.9996 0c2.8388 0 5.1537 2.5689 5.2757 5.7898h4.9678a.459.459 0 0 1 .458.483l-.773 15.5883-.007.131c-.094 1.094-.979 1.9769-2.0709 2.0059z" />
+            </svg>
+            <span>Shopee</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="brand brand-footer">ARTICULO</p>
+        <p class="muted">Handcrafted capiz lights · Made in the Philippines</p>
+      </div>
+      <p class="muted">© <span id="year"></span> Articulo. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 19V5" />
+      <path d="m5 12 7-7 7 7" />
+    </svg>
+  </button>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
