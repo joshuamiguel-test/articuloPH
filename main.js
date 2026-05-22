@@ -174,3 +174,49 @@ document.getElementById('year').textContent = new Date().getFullYear();
   recalc();
   start();
 })();
+
+
+// Products grid
+(async function initProducts() {
+  const grid = document.getElementById("product-grid");
+  if (!grid) return;
+
+  const escapeHtml = (s) => String(s).replace(/[&<>"\x27]/g, (c) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+  }[c]));
+
+  let products = [];
+  try {
+    const res = await fetch("products.json");
+    if (!res.ok) throw new Error("Failed to load products");
+    products = await res.json();
+  } catch (err) {
+    grid.innerHTML = '<p class="product-placeholder">Could not load collection.</p>';
+    console.error(err);
+    return;
+  }
+
+  if (!Array.isArray(products) || products.length === 0) {
+    grid.innerHTML = '<p class="product-placeholder">No pieces yet.</p>';
+    return;
+  }
+
+  const featured = products.filter((p) => p.featured);
+  const toRender = featured.length > 0 ? featured : products;
+
+  grid.innerHTML = toRender.map((p) => `
+    <article class="product-card">
+      <div class="product-media">
+        <img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.name)}" loading="lazy" />
+      </div>
+      <div class="product-body">
+        <h3 class="product-name">${escapeHtml(p.name)}</h3>
+        <p class="product-size">${escapeHtml(p.size || "")}</p>
+        <div class="product-links">
+          ${p.lazada ? `<a class="product-link" href="${escapeHtml(p.lazada)}" target="_blank" rel="noopener">Lazada</a>` : ""}
+          ${p.shopee ? `<a class="product-link" href="${escapeHtml(p.shopee)}" target="_blank" rel="noopener">Shopee</a>` : ""}
+        </div>
+      </div>
+    </article>
+  `).join("");
+})();

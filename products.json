@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Solene Pendant",
+    "size": "40 cm · Pendant",
+    "image": "images/brand_logo.png",
+    "lazada": "https://www.lazada.com.ph/",
+    "shopee": "https://shopee.ph/",
+    "featured": true
+  },
+  {
+    "name": "Mira Table Lamp",
+    "size": "30 cm · Table",
+    "image": "images/brand_logo.png",
+    "lazada": "https://www.lazada.com.ph/",
+    "shopee": "https://shopee.ph/",
+    "featured": true
+  },
+  {
+    "name": "Aurelia Chandelier",
+    "size": "60 cm · Hanging",
+    "image": "images/brand_logo.png",
+    "lazada": "https://www.lazada.com.ph/",
+    "shopee": "https://shopee.ph/",
+    "featured": true
+  },
+  {
+    "name": "Luma Wall Sconce",
+    "size": "25 cm · Wall",
+    "image": "images/brand_logo.png",
+    "lazada": "https://www.lazada.com.ph/",
+    "shopee": "https://shopee.ph/",
+    "featured": true
+  },
+  {
+    "name": "Halcyon Pendant",
+    "size": "50 cm · Pendant",
+    "image": "images/brand_logo.png",
+    "lazada": "https://www.lazada.com.ph/",
+    "shopee": "https://shopee.ph/",
+    "featured": true
+  },
+  {
+    "name": "Selene Tealight",
+    "size": "15 cm · Tabletop",
+    "image": "images/brand_logo.png",
+    "lazada": "https://www.lazada.com.ph/",
+    "shopee": "https://shopee.ph/",
+    "featured": true
+  }
+]
