@@ -1,50 +1,83 @@
 [
   {
+    "name": "Estrella Tealight Lantern",
+    "size": "15 cm · Tabletop",
+    "category": "Lanterns",
+    "image": "images/brand_logo.png",
+    "lazada": "https://www.lazada.com.ph/shop/articulo",
+    "shopee": "https://shopee.ph/articulo_",
+    "featured": true
+  },
+  {
+    "name": "Aria Hanging Lantern",
+    "size": "25 cm · Hanging",
+    "category": "Lanterns",
+    "image": "images/brand_logo.png",
+    "lazada": "https://www.lazada.com.ph/shop/articulo",
+    "shopee": "https://shopee.ph/articulo_",
+    "featured": true
+  },
+  {
+    "name": "Luma Floor Lantern",
+    "size": "40 cm · Floor",
+    "category": "Lanterns",
+    "image": "images/brand_logo.png",
+    "lazada": "https://www.lazada.com.ph/shop/articulo",
+    "shopee": "https://shopee.ph/articulo_",
+    "featured": true
+  },
+  {
     "name": "Solene Pendant",
     "size": "40 cm · Pendant",
+    "category": "Lamps",
     "image": "images/brand_logo.png",
-    "lazada": "https://www.lazada.com.ph/",
-    "shopee": "https://shopee.ph/",
+    "lazada": "https://www.lazada.com.ph/shop/articulo",
+    "shopee": "https://shopee.ph/articulo_",
     "featured": true
   },
   {
     "name": "Mira Table Lamp",
     "size": "30 cm · Table",
+    "category": "Lamps",
     "image": "images/brand_logo.png",
-    "lazada": "https://www.lazada.com.ph/",
-    "shopee": "https://shopee.ph/",
+    "lazada": "https://www.lazada.com.ph/shop/articulo",
+    "shopee": "https://shopee.ph/articulo_",
     "featured": true
   },
   {
     "name": "Aurelia Chandelier",
     "size": "60 cm · Hanging",
+    "category": "Lamps",
     "image": "images/brand_logo.png",
-    "lazada": "https://www.lazada.com.ph/",
-    "shopee": "https://shopee.ph/",
+    "lazada": "https://www.lazada.com.ph/shop/articulo",
+    "shopee": "https://shopee.ph/articulo_",
     "featured": true
   },
   {
-    "name": "Luma Wall Sconce",
-    "size": "25 cm · Wall",
+    "name": "Parol Capiz Star",
+    "size": "30 cm · Hanging",
+    "category": "Christmas Decor",
     "image": "images/brand_logo.png",
-    "lazada": "https://www.lazada.com.ph/",
-    "shopee": "https://shopee.ph/",
+    "lazada": "https://www.lazada.com.ph/shop/articulo",
+    "shopee": "https://shopee.ph/articulo_",
     "featured": true
   },
   {
-    "name": "Halcyon Pendant",
-    "size": "50 cm · Pendant",
+    "name": "Noche Ornament Set",
+    "size": "8 cm · Set of 6",
+    "category": "Christmas Decor",
     "image": "images/brand_logo.png",
-    "lazada": "https://www.lazada.com.ph/",
-    "shopee": "https://shopee.ph/",
+    "lazada": "https://www.lazada.com.ph/shop/articulo",
+    "shopee": "https://shopee.ph/articulo_",
     "featured": true
   },
   {
-    "name": "Selene Tealight",
-    "size": "15 cm · Tabletop",
+    "name": "Belen Tabletop",
+    "size": "20 cm · Tabletop",
+    "category": "Christmas Decor",
     "image": "images/brand_logo.png",
-    "lazada": "https://www.lazada.com.ph/",
-    "shopee": "https://shopee.ph/",
+    "lazada": "https://www.lazada.com.ph/shop/articulo",
+    "shopee": "https://shopee.ph/articulo_",
     "featured": true
   }
 ]

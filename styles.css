@@ -377,14 +377,37 @@ p {
   max-width: 560px;
   margin: 1rem auto 0;
 }
-.product-grid {
+.product-list {
   margin-top: 50px;
+}
+.product-group + .product-group {
+  margin-top: 64px;
+}
+.category-heading {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 28px;
+  position: relative;
+  padding-bottom: 14px;
+}
+.category-heading::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 1px;
+  background: var(--gold);
+}
+.product-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
 }
 .product-placeholder {
-  grid-column: 1 / -1;
   text-align: center;
   color: var(--muted);
   padding: 40px;
@@ -395,7 +418,9 @@ p {
   border: 1px solid var(--border);
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 .product-card:hover {
   transform: translateY(-4px);
@@ -451,7 +476,9 @@ p {
   text-decoration: none;
   color: var(--ink);
   border: 1px solid var(--ink);
-  transition: background 0.2s ease, color 0.2s ease;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
 }
 .product-link:hover {
   background: var(--ink);
@@ -475,9 +502,17 @@ p {
   flex-wrap: wrap;
 }
 @media (max-width: 480px) {
-  .collection-cta { margin-top: 40px; padding-top: 30px; }
-  .collection-cta-buttons { flex-direction: column; align-items: stretch; }
-  .collection-cta-buttons .btn { text-align: center; }
+  .collection-cta {
+    margin-top: 40px;
+    padding-top: 30px;
+  }
+  .collection-cta-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .collection-cta-buttons .btn {
+    text-align: center;
+  }
 }
 
 /* CTA / Social */
@@ -702,10 +737,19 @@ p {
   .collection {
     padding: 64px 0;
   }
+  .product-list {
+    margin-top: 36px;
+  }
+  .product-group + .product-group {
+    margin-top: 48px;
+  }
+  .category-heading {
+    font-size: 1.45rem;
+    margin-bottom: 22px;
+  }
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
-    margin-top: 36px;
   }
   .product-media {
     padding: 24px;
