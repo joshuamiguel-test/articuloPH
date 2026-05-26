@@ -424,8 +424,12 @@ p {
 
 /* Skeleton loader */
 @keyframes shimmer {
-  from { background-position: -200% 0; }
-  to   { background-position:  200% 0; }
+  from {
+    background-position: -200% 0;
+  }
+  to {
+    background-position: 200% 0;
+  }
 }
 .skeleton-grid {
   display: grid;
@@ -454,7 +458,7 @@ p {
   background: linear-gradient(
     90deg,
     var(--cream-2) 25%,
-    var(--border)   50%,
+    var(--border) 50%,
     var(--cream-2) 75%
   );
   background-size: 200% 100%;
@@ -471,8 +475,12 @@ p {
   height: 14px;
   border-radius: 2px;
 }
-.skeleton-line.wide   { width: 60%; }
-.skeleton-line.narrow { width: 35%; }
+.skeleton-line.wide {
+  width: 60%;
+}
+.skeleton-line.narrow {
+  width: 35%;
+}
 .skeleton-btns {
   display: flex;
   gap: 8px;
@@ -484,6 +492,22 @@ p {
   height: 36px;
 }
 
+@keyframes gold-shimmer {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 1px rgba(214, 178, 101, 0.35),
+      0 6px 20px rgba(214, 178, 101, 0.25),
+      0 16px 40px rgba(214, 178, 101, 0.12);
+  }
+  50% {
+    box-shadow:
+      0 0 0 1px rgba(231, 207, 148, 0.6),
+      0 6px 24px rgba(231, 207, 148, 0.4),
+      0 18px 48px rgba(214, 178, 101, 0.22);
+  }
+}
+
 .product-card {
   background: var(--cream);
   border: 1px solid var(--border);
@@ -491,11 +515,13 @@ p {
   flex-direction: column;
   transition:
     transform 0.3s ease,
-    box-shadow 0.3s ease;
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
 }
 .product-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.06);
+  border-color: rgba(214, 178, 101, 0.15);
+  animation: gold-shimmer 2s ease-in-out infinite;
 }
 .product-media {
   aspect-ratio: 1 / 1;
