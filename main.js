@@ -185,6 +185,9 @@ document.getElementById('year').textContent = new Date().getFullYear();
     "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
   }[c]));
 
+  // uncomment to simulate loading of product or to show the skeleton loading
+  // await new Promise(r => setTimeout(r, 15000));
+
   let products = [];
   try {
     const res = await fetch("products.json");
