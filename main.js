@@ -241,4 +241,24 @@ document.getElementById('year').textContent = new Date().getFullYear();
       </div>
     </div>
   `).join("");
+
+  const cards = list.querySelectorAll(".product-card");
+  cards.forEach((card, i) => {
+    card.classList.add("fade-up");
+    card.style.transitionDelay = `${i * 60}ms`;
+  });
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12 }
+  );
+
+  cards.forEach((card) => observer.observe(card));
 })();
