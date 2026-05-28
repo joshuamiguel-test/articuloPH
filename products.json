@@ -2,6 +2,7 @@
   {
     "name": "Estrella Tealight Lantern",
     "size": "15 cm · Tabletop",
+    "description": "A delicate tabletop lantern with capiz shell panels that glow warm amber when lit. Perfect for intimate dining or bedside ambiance.",
     "category": "Lanterns",
     "image": "images/brand_logo.png",
     "lazada": "https://www.lazada.com.ph/shop/articulo",
@@ -11,6 +12,7 @@
   {
     "name": "Aria Hanging Lantern",
     "size": "25 cm · Hanging",
+    "description": "A graceful hanging lantern hand-strung with translucent capiz shells. Creates soft, dappled light ideal for entryways or covered patios.",
     "category": "Lanterns",
     "image": "images/brand_logo.png",
     "lazada": "https://www.lazada.com.ph/shop/articulo",
@@ -20,6 +22,7 @@
   {
     "name": "Luma Floor Lantern",
     "size": "40 cm · Floor",
+    "description": "A striking floor piece with layered capiz shells that cast rich amber patterns across any room. Makes a statement beside reading chairs or in living spaces.",
     "category": "Lanterns",
     "image": "images/brand_logo.png",
     "lazada": "https://www.lazada.com.ph/shop/articulo",
@@ -29,6 +32,7 @@
   {
     "name": "Solene Pendant",
     "size": "40 cm · Pendant",
+    "description": "An elegant pendant light with overlapping capiz panels. Softens any room with a warm, diffused glow that shifts gently with the air.",
     "category": "Lamps",
     "image": "images/brand_logo.png",
     "lazada": "https://www.lazada.com.ph/shop/articulo",
@@ -38,6 +42,7 @@
   {
     "name": "Mira Table Lamp",
     "size": "30 cm · Table",
+    "description": "A refined table lamp with a hand-assembled capiz shade. Its gentle light adds warmth to bedrooms, studies, and side tables alike.",
     "category": "Lamps",
     "image": "images/brand_logo.png",
     "lazada": "https://www.lazada.com.ph/shop/articulo",
@@ -47,6 +52,7 @@
   {
     "name": "Aurelia Chandelier",
     "size": "60 cm · Hanging",
+    "description": "A grand capiz chandelier that transforms any ceiling into a luminous focal point. Hundreds of shells, hand-assembled one by one.",
     "category": "Lamps",
     "image": "images/brand_logo.png",
     "lazada": "https://www.lazada.com.ph/shop/articulo",
@@ -56,6 +62,7 @@
   {
     "name": "Parol Capiz Star",
     "size": "30 cm · Hanging",
+    "description": "A traditional Filipino parol reimagined in hand-polished capiz shells. A radiant symbol of the season — beautiful displayed year-round.",
     "category": "Christmas Decor",
     "image": "images/brand_logo.png",
     "lazada": "https://www.lazada.com.ph/shop/articulo",
@@ -65,6 +72,7 @@
   {
     "name": "Noche Ornament Set",
     "size": "8 cm · Set of 6",
+    "description": "Six delicate capiz ornaments that shimmer on any tree. Each piece is hand-cut and hand-polished by Filipino artisans from the Visayas.",
     "category": "Christmas Decor",
     "image": "images/brand_logo.png",
     "lazada": "https://www.lazada.com.ph/shop/articulo",
@@ -74,6 +82,7 @@
   {
     "name": "Belen Tabletop",
     "size": "20 cm · Tabletop",
+    "description": "A nativity scene rendered entirely in capiz shell. A timeless centerpiece that glows softly by candlelight or beneath a warm lamp.",
     "category": "Christmas Decor",
     "image": "images/brand_logo.png",
     "lazada": "https://www.lazada.com.ph/shop/articulo",

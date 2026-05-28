@@ -219,10 +219,12 @@ document.getElementById('year').textContent = new Date().getFullYear();
     <article class="product-card">
       <div class="product-media">
         <img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.name)}" loading="lazy" />
+        ${p.description ? `<div class="product-desc-overlay" aria-hidden="true"><p>${escapeHtml(p.description)}</p></div>` : ""}
       </div>
       <div class="product-body">
         <h4 class="product-name">${escapeHtml(p.name)}</h4>
         <p class="product-size">${escapeHtml(p.size || "")}</p>
+        ${p.description ? `<p class="product-desc-text">${escapeHtml(p.description)}</p>` : ""}
         <div class="product-links">
           ${p.lazada ? `<a class="product-link" href="${escapeHtml(p.lazada)}" target="_blank" rel="noopener">Lazada</a>` : ""}
           ${p.shopee ? `<a class="product-link" href="${escapeHtml(p.shopee)}" target="_blank" rel="noopener">Shopee</a>` : ""}
