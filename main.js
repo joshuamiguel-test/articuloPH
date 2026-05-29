@@ -176,6 +176,49 @@ document.getElementById('year').textContent = new Date().getFullYear();
 })();
 
 
+// Gallery masonry — reads from review-images.json
+(async function initGallery() {
+  const wall = document.getElementById('masonry');
+  if (!wall) return;
+
+  let images = [];
+  try {
+    const res = await fetch('review-images.json');
+    if (!res.ok) throw new Error('Failed to load review images');
+    images = await res.json();
+  } catch (err) {
+    console.error(err);
+    return;
+  }
+
+  if (!Array.isArray(images) || images.length === 0) return;
+
+  const escapeHtml = (s) => String(s).replace(/[&<>"']/g, (c) => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  }[c]));
+
+  wall.innerHTML = images.map((img) => `
+    <figure class="masonry-item">
+      <img src="${escapeHtml(img.src)}" alt="${escapeHtml(img.alt || '')}" loading="lazy" />
+    </figure>
+  `).join('');
+
+  const items = wall.querySelectorAll('.masonry-item');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        e.target.classList.add('is-visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  items.forEach((el, i) => {
+    el.style.transitionDelay = `${(i % 4) * 80}ms`;
+    observer.observe(el);
+  });
+})();
+
 // Products grid
 (async function initProducts() {
   const list = document.getElementById("product-list");
