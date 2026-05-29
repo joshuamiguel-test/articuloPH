@@ -383,16 +383,24 @@ p {
 }
 .masonry {
   margin-top: 50px;
-  column-count: 4;
-  column-gap: 16px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.masonry-col {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 .masonry-item {
-  break-inside: avoid;
-  margin: 0 0 16px;
+  margin: 0;
   display: block;
   overflow: hidden;
   border: 1px solid var(--border);
   background: var(--cream-2);
+  aspect-ratio: var(--aspect, 1);
   opacity: 0;
   transform: translateY(20px);
   transition:
@@ -406,7 +414,8 @@ p {
 .masonry-item img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   transition: transform 0.5s ease;
 }
 @media (hover: hover) and (pointer: fine) {
@@ -931,11 +940,10 @@ p {
   }
   .masonry {
     margin-top: 36px;
-    column-count: 3;
-    column-gap: 12px;
+    gap: 12px;
   }
-  .masonry-item {
-    margin-bottom: 12px;
+  .masonry-col {
+    gap: 12px;
   }
   .about-grid {
     grid-template-columns: 1fr;
@@ -1040,11 +1048,10 @@ p {
     padding: 56px 0;
   }
   .masonry {
-    column-count: 2;
-    column-gap: 10px;
+    gap: 10px;
   }
-  .masonry-item {
-    margin-bottom: 10px;
+  .masonry-col {
+    gap: 10px;
   }
   .product-grid {
     grid-template-columns: 1fr;
