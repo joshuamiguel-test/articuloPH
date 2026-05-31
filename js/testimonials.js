@@ -11,7 +11,7 @@ export async function initTestimonialCarousel() {
 
   let items = [];
   try {
-    const res = await fetch('testimonials.json');
+    const res = await fetch('data/testimonials.json');
     if (!res.ok) throw new Error('Failed to load testimonials');
     items = await res.json();
   } catch (err) {

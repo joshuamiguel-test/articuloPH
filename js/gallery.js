@@ -13,7 +13,7 @@ export async function initGallery() {
 
   let images = [];
   try {
-    const res = await fetch('review-images.json');
+    const res = await fetch('data/review-images.json');
     if (!res.ok) throw new Error('Failed to load review images');
     images = await res.json();
   } catch (err) {
