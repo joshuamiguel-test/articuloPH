@@ -1,11 +1,13 @@
 [
-  { "src": "images/reviews/capiz_1.JPG", "alt": "" },
+  { "src": "images/reviews/sampaga_4.webp", "alt": "" },
   { "src": "images/reviews/belen_1.webp", "alt": "" },
+  { "src": "images/reviews/parihaba_3.webp", "alt": "" },
   { "src": "images/reviews/mayumi.webp", "alt": "" },
   { "src": "images/reviews/lira.webp", "alt": "" },
-  { "src": "images/reviews/mayumi_1.webp", "alt": "" },
+  { "src": "images/reviews/espera_1.webp", "alt": "" },
   { "src": "images/reviews/ningning.webp", "alt": "" },
-  { "src": "images/reviews/espera_2.webp", "alt": "" },
+  { "src": "images/reviews/parihaba.webp", "alt": "" },
+  { "src": "images/reviews/espera_3.webp", "alt": "" },
   { "src": "images/reviews/silindro.webp", "alt": "" },
   { "src": "images/reviews/rosas.webp", "alt": "" },
   { "src": "images/reviews/tala.jpg", "alt": "" },
@@ -14,5 +16,8 @@
   { "src": "images/reviews/sampaga.webp", "alt": "" },
   { "src": "images/reviews/kawayan.webp", "alt": "" },
   { "src": "images/reviews/tala_door.jpg", "alt": "" },
-  { "src": "images/reviews/lingin.webp", "alt": "" }
+  { "src": "images/reviews/lingin.webp", "alt": "" },
+  { "src": "images/reviews/mayumi_1.webp", "alt": "" },
+  { "src": "images/reviews/espera_2.webp", "alt": "" },
+  { "src": "images/reviews/sampaga_3.webp", "alt": "" }
 ]
