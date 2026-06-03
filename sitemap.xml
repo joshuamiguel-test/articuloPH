@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://articulo-ph.com/</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- ============================================================
+       ADD NEW PAGES HERE
+       Copy the block below for each new page and update the values:
+         <loc>     full URL of the page (must start with https://)
+         <lastmod> date you last updated it (format: YYYY-MM-DD)
+         <priority> importance vs other pages, 0.0 to 1.0 (homepage = 1.0)
+
+  <url>
+    <loc>https://articulo-ph.com/about/</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+       ============================================================ -->
+</urlset>
