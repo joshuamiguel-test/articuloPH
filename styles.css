@@ -601,18 +601,13 @@ p {
 }
 .product-media {
   aspect-ratio: 1 / 1;
-  background: var(--cream-2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px;
   overflow: hidden;
   position: relative;
 }
 .product-media img {
-  max-width: 75%;
-  max-height: 75%;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition: transform 0.5s ease;
 }
 
@@ -984,9 +979,6 @@ p {
   .product-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
-  }
-  .product-media {
-    padding: 24px;
   }
   .product-body {
     padding: 18px 16px 22px;
