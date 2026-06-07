@@ -45,7 +45,8 @@ export function initOrder() {
       <div class="cart-total-row">
         <span>Total</span>
         <span class="cart-total">${formatPeso(cartTotal())}</span>
-      </div>`;
+      </div>
+      <a href="../catalog/" class="btn btn-ghost continue-shopping">&#8592; Continue shopping</a>`;
 
     summary.querySelectorAll('.cart-line').forEach((row) => {
       const id = row.dataset.productId;

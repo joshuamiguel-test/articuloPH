@@ -95,6 +95,12 @@
   color: var(--muted);
   margin-bottom: 20px;
 }
+.continue-shopping {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
 
 /* Empty cart: collapse the two-column grid and center the message + button */
 .checkout-grid.cart-is-empty {
@@ -203,6 +209,7 @@
   }
   .cart-line .qty-stepper {
     grid-area: qty;
+    justify-self: end;
   }
   .cart-line-total {
     grid-area: total;
