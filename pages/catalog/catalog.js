@@ -8,10 +8,22 @@ export async function initCatalog() {
 
   let products = [];
   try {
-    const res = await fetch(`${API_URL}?action=getProducts`);
-    if (!res.ok) throw new Error('Failed to load products');
-    const data = await res.json();
-    products = data.products || [];
+    const CACHE_KEY = 'products_cache';
+    const CACHE_TTL = 5 * 60 * 1000; // 5 minutes
+    const cached = sessionStorage.getItem(CACHE_KEY);
+    if (cached) {
+      const { ts, data } = JSON.parse(cached);
+      if (Date.now() - ts < CACHE_TTL) {
+        products = data;
+      }
+    }
+    if (products.length === 0) {
+      const res = await fetch(`${API_URL}?action=getProducts`);
+      if (!res.ok) throw new Error('Failed to load products');
+      const data = await res.json();
+      products = data.products || [];
+      sessionStorage.setItem(CACHE_KEY, JSON.stringify({ ts: Date.now(), data: products }));
+    }
   } catch (err) {
     list.innerHTML = '<p class="product-placeholder">Could not load the shop. Please try again later.</p>';
     console.error(err);
