@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Checkout — Articulo Capiz Handicrafts</title>
+  <meta name="description"
+    content="Review your cart and place your order for handcrafted capiz shell handicrafts by Articulo." />
+  <meta name="author" content="Articulo" />
+  <meta name="robots" content="noindex, follow" />
+  <meta name="theme-color" content="#d6b265" />
+
+  <link rel="icon" type="image/png" href="../../images/brand_logo.png" />
+  <link rel="apple-touch-icon" href="../../images/brand_logo.png" />
+
+  <link rel="canonical" href="https://articulo-ph.com/pages/order/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="order.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="../../" class="brand">ARTICULO</a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false"
+        aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav">
+        <a href="../catalog/">Shop</a>
+        <a href="../../#testimonials">Testimonials</a>
+        <a href="../../#gallery">Gallery</a>
+        <a href="../../#about">About</a>
+        <a href="../../#contact">Contact</a>
+        <a href="./" class="nav-cart" aria-current="page">Cart<span id="cart-count" class="cart-count" hidden>0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="checkout">
+      <div class="container">
+        <div id="checkout-intro">
+          <p class="eyebrow center">Checkout</p>
+          <h2 class="center">Your order</h2>
+        </div>
+
+        <div class="checkout-grid">
+          <div class="checkout-summary">
+            <h3 class="checkout-heading" id="cart-heading">Cart</h3>
+            <div id="order-summary"></div>
+          </div>
+
+          <form id="order-form" class="checkout-form" novalidate hidden>
+            <h3 class="checkout-heading">Your details</h3>
+
+            <label class="field">
+              <span>Full name</span>
+              <input type="text" name="customer_name" required autocomplete="name" />
+            </label>
+
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" required autocomplete="email" />
+            </label>
+
+            <label class="field">
+              <span>Phone</span>
+              <input type="tel" name="phone" required autocomplete="tel" />
+            </label>
+
+            <label class="field">
+              <span>Delivery address</span>
+              <textarea name="address" rows="3" required autocomplete="street-address"></textarea>
+            </label>
+
+            <p id="order-error" class="order-error" hidden></p>
+
+            <button type="submit" class="btn btn-primary">Place order</button>
+            <p class="checkout-note muted">
+              No payment is taken now — we'll reach out to confirm your order and arrange payment.
+            </p>
+          </form>
+        </div>
+
+        <div id="order-confirmation" class="order-confirmation" hidden>
+          <h3>Thank you! Your order is in.</h3>
+          <p>Your order reference is <strong class="order-id"></strong>.</p>
+          <p class="muted">We'll be in touch shortly by email or phone to confirm details and arrange payment.</p>
+          <a href="../catalog/" class="btn btn-primary">Continue shopping</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="brand brand-footer">ARTICULO</p>
+        <p class="muted">Handcrafted capiz · Made in the Philippines</p>
+      </div>
+      <p class="muted">© <span id="year"></span> Articulo. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 19V5" />
+      <path d="m5 12 7-7 7 7" />
+    </svg>
+  </button>
+
+  <script type="module" src="order-page.js"></script>
+</body>
+
+</html>

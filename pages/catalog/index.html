@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Shop — Articulo Capiz Handicrafts</title>
+  <meta name="description"
+    content="Shop handcrafted capiz shell lanterns, lamps, and Christmas decor by Articulo. Add to cart and order directly from our Filipino artisans." />
+  <meta name="author" content="Articulo" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#d6b265" />
+
+  <link rel="icon" type="image/png" href="../../images/brand_logo.png" />
+  <link rel="apple-touch-icon" href="../../images/brand_logo.png" />
+
+  <link rel="canonical" href="https://articulo-ph.com/pages/catalog/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Articulo" />
+  <meta property="og:title" content="Shop — Articulo Capiz Handicrafts" />
+  <meta property="og:description"
+    content="Shop handcrafted capiz shell handicrafts and order directly from Filipino artisans." />
+  <meta property="og:url" content="https://articulo-ph.com/pages/catalog/" />
+  <meta property="og:image" content="https://articulo-ph.com/images/brand_logo.png" />
+  <meta property="og:image:alt" content="Articulo capiz handicrafts glowing warmly" />
+  <meta property="og:locale" content="en_PH" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Shop — Articulo Capiz Handicrafts" />
+  <meta name="twitter:description" content="Shop handcrafted capiz shell handicrafts by Filipino artisans." />
+  <meta name="twitter:image" content="https://articulo-ph.com/images/brand_logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="catalog.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="../../" class="brand">ARTICULO</a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false"
+        aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav">
+        <a href="./" aria-current="page">Shop</a>
+        <a href="../../#testimonials">Testimonials</a>
+        <a href="../../#gallery">Gallery</a>
+        <a href="../../#about">About</a>
+        <a href="../../#contact">Contact</a>
+        <a href="../order/" class="nav-cart">Cart<span id="cart-count" class="cart-count" hidden>0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="catalog">
+      <div class="container">
+        <p class="eyebrow center">The Shop</p>
+        <h2 class="center">Order capiz, made to glow.</h2>
+        <p class="section-lead center">
+          Browse our handcrafted pieces, add your favorites to the cart, and place an order directly with us.
+        </p>
+
+        <div id="catalog-list" class="catalog-list">
+          <div class="skeleton-grid" aria-hidden="true">
+            <div class="skeleton-card"><div class="skeleton-media"></div><div class="skeleton-body"><div class="skeleton-line wide"></div><div class="skeleton-line narrow"></div><div class="skeleton-btns"><div class="skeleton-btn"></div><div class="skeleton-btn"></div></div></div></div>
+            <div class="skeleton-card"><div class="skeleton-media"></div><div class="skeleton-body"><div class="skeleton-line wide"></div><div class="skeleton-line narrow"></div><div class="skeleton-btns"><div class="skeleton-btn"></div><div class="skeleton-btn"></div></div></div></div>
+            <div class="skeleton-card"><div class="skeleton-media"></div><div class="skeleton-body"><div class="skeleton-line wide"></div><div class="skeleton-line narrow"></div><div class="skeleton-btns"><div class="skeleton-btn"></div><div class="skeleton-btn"></div></div></div></div>
+            <div class="skeleton-card"><div class="skeleton-media"></div><div class="skeleton-body"><div class="skeleton-line wide"></div><div class="skeleton-line narrow"></div><div class="skeleton-btns"><div class="skeleton-btn"></div><div class="skeleton-btn"></div></div></div></div>
+            <div class="skeleton-card"><div class="skeleton-media"></div><div class="skeleton-body"><div class="skeleton-line wide"></div><div class="skeleton-line narrow"></div><div class="skeleton-btns"><div class="skeleton-btn"></div><div class="skeleton-btn"></div></div></div></div>
+            <div class="skeleton-card"><div class="skeleton-media"></div><div class="skeleton-body"><div class="skeleton-line wide"></div><div class="skeleton-line narrow"></div><div class="skeleton-btns"><div class="skeleton-btn"></div><div class="skeleton-btn"></div></div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="brand brand-footer">ARTICULO</p>
+        <p class="muted">Handcrafted capiz · Made in the Philippines</p>
+      </div>
+      <p class="muted">© <span id="year"></span> Articulo. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 19V5" />
+      <path d="m5 12 7-7 7 7" />
+    </svg>
+  </button>
+
+  <script type="module" src="catalog-page.js"></script>
+</body>
+
+</html>

@@ -7,6 +7,13 @@
     <priority>1.0</priority>
   </url>
 
+  <url>
+    <loc>https://articulo-ph.com/pages/catalog/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- ============================================================
        ADD NEW PAGES HERE
        Copy the block below for each new page and update the values:

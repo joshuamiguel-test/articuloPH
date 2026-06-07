@@ -43,6 +43,20 @@ body {
   overflow-x: hidden;
 }
 
+/* Sticky footer: keep the footer at the bottom even on short pages
+   (e.g. the order confirmation screen) */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1 0 auto;
+}
+.site-footer {
+  flex-shrink: 0;
+}
+
 .container {
   max-width: 1120px;
   margin: 0 auto;
@@ -1048,6 +1062,13 @@ p {
   .product-grid {
     grid-template-columns: 1fr;
   }
+  .skeleton-grid {
+    grid-template-columns: 1fr;
+  }
+  /* Show only one skeleton card while loading on phones */
+  .skeleton-card:not(:first-child) {
+    display: none;
+  }
   .testimonial {
     padding: 28px 20px;
   }
@@ -1059,4 +1080,88 @@ p {
     min-width: 0;
     flex: 1 1 calc(50% - 10px);
   }
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   Shared shop UI (used by /catalog/ and /order/, plus the header cart badge
+   on every page). Page-specific styles live in catalog/catalog.css and
+   order/order.css.
+   ───────────────────────────────────────────────────────────────────────── */
+
+/* Cart link + badge in the header nav (all pages) */
+.nav-cart {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.cart-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 9px;
+  background: var(--gold);
+  color: var(--ink);
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+/* Buttons rendered as <button> need a few resets to match the <a> .btn */
+button.btn {
+  font-family: inherit;
+  cursor: pointer;
+}
+button.btn[disabled] {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* Quantity stepper (shared by the catalog cards and the cart lines) */
+.qty-stepper {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--border);
+}
+.qty-stepper[hidden] {
+  display: none;
+}
+.qty-btn {
+  width: 38px;
+  height: 38px;
+  border: none;
+  background: transparent;
+  color: var(--ink);
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.qty-btn:hover {
+  background: var(--cream-2);
+}
+.qty-input {
+  width: 46px;
+  height: 38px;
+  border: none;
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  text-align: center;
+  font-family: inherit;
+  font-size: 0.95rem;
+  background: transparent;
+  color: var(--ink);
+  -moz-appearance: textfield;
+}
+.qty-input::-webkit-outer-spin-button,
+.qty-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Ensure the hidden attribute always wins over display rules */
+[hidden] {
+  display: none !important;
 }
